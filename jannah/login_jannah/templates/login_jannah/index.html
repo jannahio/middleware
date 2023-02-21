@@ -1,0 +1,26 @@
+<!-- login_jannah/templates/login_jannah/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Workflows</title>
+</head>
+<body>
+What workflow would you like to start?<br>
+<input id="workflow-name-input" type="text" size="100"><br>
+<input id="workflow-name-submit" type="button" value="Enter">
+
+<script>
+        document.querySelector('#workflow-name-input').focus();
+        document.querySelector('#workflow-name-input').onkeyup = function(e) {
+            if (e.keyCode === 13) {  // enter, return
+                document.querySelector('#workflow-name-submit').click();
+            }
+        };
+        document.querySelector('#workflow-name-submit').onclick = function(e) {
+            var workflowName = document.querySelector('#workflow-name-input').value;
+            window.location.pathname =  '/login/' + workflowName + '/';
+        };
+</script>
+</body>
+</html>
