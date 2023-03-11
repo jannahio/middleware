@@ -9,6 +9,7 @@ class JannahSiteType(DjangoObjectType):
 
 class Query(graphene.ObjectType):
     site = graphene.Field(JannahSiteType)
+    all_users = graphene.List(jannah_types.UserType)
     all_boots = graphene.List(jannah_types.BootType)
     all_networks = graphene.List(jannah_types.NetworkType)
     all_storages = graphene.List(jannah_types.StorageType)
@@ -19,6 +20,10 @@ class Query(graphene.ObjectType):
     def resolve_site(root, info):
         return (
             jannah_models.Site.objects.first()
+        )
+    def resolve_all_users(root, info):
+        return (
+            jannah_models.User.objects.all()
         )
     def resolve_all_boots(root, info):
         return (
