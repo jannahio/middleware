@@ -64,7 +64,7 @@ AUTHENTICATION_BACKENDS = [
 
 CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ORIGIN_WHITELIST = ("http://localhost:8080","http://localhost:5173",)
+CORS_ORIGIN_WHITELIST = ("http://localhost:8080","http://localhost:8100","http://localhost:5173",)
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
