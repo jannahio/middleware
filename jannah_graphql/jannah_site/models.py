@@ -89,7 +89,7 @@ class UX(models.Model):
     description = models.TextField()
     class Meta:
         verbose_name = 'ux'
-        verbose_name_plural = '5. UXs'
+        verbose_name_plural = '7. UXs'
 
     def __str__(self):
         return self.name
@@ -101,7 +101,7 @@ class Feedback(models.Model):
     description = models.TextField()
     class Meta:
         verbose_name = 'feedback'
-        verbose_name_plural = '7. Feedbackss'
+        verbose_name_plural = '8. Feedbackss'
 
     def __str__(self):
         return self.name
@@ -113,7 +113,7 @@ class Workflow(models.Model):
     description = models.TextField()
     class Meta:
         verbose_name = 'workflow'
-        verbose_name_plural = '8. Workflows'
+        verbose_name_plural = '9. Workflows'
 
     def __str__(self):
         return self.name

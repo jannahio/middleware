@@ -3,12 +3,9 @@ from graphene_django import DjangoObjectType
 from jannah_site import models as jannah_models
 from jannah_site import types as jannah_types
 
-class JannahSiteType(DjangoObjectType):
-    class Meta:
-        model = jannah_models.Site
 
 class Query(graphene.ObjectType):
-    site = graphene.Field(JannahSiteType)
+    site = graphene.Field(jannah_types.JannahSiteType)
     all_users = graphene.List(jannah_types.UserType)
     all_boots = graphene.List(jannah_types.BootType)
     all_networks = graphene.List(jannah_types.NetworkType)
