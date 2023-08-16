@@ -9,7 +9,7 @@ class Site(models.Model):
 
     class Meta:
         verbose_name = 'site'
-        verbose_name_plural = '1. Site'
+        verbose_name_plural = '1. Sites'
 
     def __str__(self):
         return self.name
