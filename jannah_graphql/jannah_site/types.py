@@ -36,4 +36,8 @@ class FeedbackType(DjangoObjectType):
     class Meta:
         model = jannah_models.Feedback
 
+class WorkflowType(DjangoObjectType):
+    class Meta:
+        model = jannah_models.Workflow
+
 
