@@ -2,7 +2,7 @@ import graphene
 from graphene_django import DjangoObjectType
 from jannah_site import models as jannah_models
 
-class JannahSiteType(DjangoObjectType):
+class SiteType(DjangoObjectType):
     class Meta:
         model = jannah_models.Site
 
