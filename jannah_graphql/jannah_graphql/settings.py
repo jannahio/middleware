@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-@51n&6ua&_nh3a)r!je26wui63u5%@jeq&7s6z1z(qkt(olez*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["dev.jannah.io"]
 
 
 # Application definition
@@ -62,10 +62,13 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
-
-CORS_ORIGIN_WHITELIST = ("http://localhost:8080","http://localhost:8100","http://localhost:5173",)
-
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOWED_ORIGIN_REGEXES = [
+#     r"^http://127.0.0.1*",
+#     r"^dev.jannah.io$"
+# ]
+CORS_ORIGIN_WHITELIST = ("http://localhost:8080","http://localhost:8100","http://localhost:5173")
+# CORS_ALLOW_ALL_ORIGINS: True
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
