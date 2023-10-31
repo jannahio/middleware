@@ -27,5 +27,5 @@ toml==0.10.2
 ipython
 jupyterlab
 tensorflow
-
+torch
 
