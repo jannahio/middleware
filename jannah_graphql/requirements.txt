@@ -28,3 +28,4 @@ ipython
 jupyterlab
 tensorflow
 torch
+pydot
