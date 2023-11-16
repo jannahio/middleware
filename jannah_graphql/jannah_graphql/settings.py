@@ -32,6 +32,7 @@ SECRET_KEY = "django-insecure-@51n&6ua&_nh3a)r!je26wui63u5%@jeq&7s6z1z(qkt(olez*
 DEBUG = True
 
 ALLOWED_HOSTS = ["0.0.0.0","127.0.0.1","localhost","devjannahio.local","dev.jannah.io"]
+
 # Application definition
 
 INSTALLED_APPS = [
