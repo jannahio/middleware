@@ -28,7 +28,6 @@ ipython
 ipywidgets
 jupyterlab
 tensorflow
-tensorflow-text
 tensorflow_datasets
 matplotlib 
 torch
