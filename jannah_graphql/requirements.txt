@@ -36,3 +36,4 @@ kfp
 kfp-kubernetes
 kubeflow-training
 papermill
+tzdata
