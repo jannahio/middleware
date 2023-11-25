@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-@51n&6ua&_nh3a)r!je26wui63u5%@jeq&7s6z1z(qkt(olez*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0","127.0.0.1","localhost","devjannahio.local","dev.jannah.io"]
+ALLOWED_HOSTS = ["0.0.0.0","127.0.0.1","localhost","devjannahio.local","dev.jannah.io","jannah-web"]
 
 # Application definition
 
