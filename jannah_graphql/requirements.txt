@@ -37,3 +37,7 @@ kfp-kubernetes
 kubeflow-training
 papermill
 tzdata
+psycopg2
+dj_database_url
+# dj-database-url
+python-decouple
