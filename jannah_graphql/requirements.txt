@@ -37,6 +37,7 @@ kfp-kubernetes
 kubeflow-training
 papermill
 tzdata
+#psycopg[binary]
 psycopg2-binary
 dj_database_url
 # dj-database-url
