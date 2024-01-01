@@ -111,6 +111,7 @@ class Workflow(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField()
     description = models.TextField()
+    isStarted = models.BooleanField(default=False)
     class Meta:
         verbose_name = 'workflow'
         verbose_name_plural = '9. Workflows'
