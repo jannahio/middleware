@@ -3,7 +3,7 @@ from kfp import dsl
 from math_utils import add_numbers
 
 _base_image='python:3.7'
-_target_image='jannahioregistry/jannah-component-2-arm64-ubuntu:v0.0.1'
+_target_image='jannah-registry/jannah-pipeline-arm64-alpine:v0.0.1'
 
 if os.environ.get('JANNAH_PIPELINE_BASE_IMAGE'):
   _base_image = os.environ['JANNAH_PIPELINE_BASE_IMAGE']
@@ -24,7 +24,7 @@ def say_hello(name: str, greeting: dsl.OutputPath(str)):
     """Log a greeting and return it as an output."""
 
     return dsl.ContainerSpec(
-        image='alpine',
+        image=_target_image,
         command=[
             'sh', '-c', '''RESPONSE="Hello, $0!"\
                             && echo $RESPONSE\

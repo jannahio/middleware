@@ -31,7 +31,7 @@ deploymentSpec:
         - python3
         - -m
         - kfp.dsl.executor_main
-        image: jannahioregistry/jannah-component-2-arm64-ubuntu:v0.0.1
+        image: jannah-registry/jannah-pipeline-arm64-alpine:v0.0.1
 pipelineInfo:
   name: add
 root:
